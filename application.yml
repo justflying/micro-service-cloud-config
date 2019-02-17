@@ -1,3 +1,18 @@
-﻿spring:
-      product:
-	
+spring:
+  profiiles:
+    active:
+    - dev
+    
+---
+spring:
+  profiles: dev #开发环境
+  application: 
+    name: micro-service-cloud-config-dev
+
+---
+spring:
+  profiles: test #测试环境
+  application: 
+    name: micro-service-cloud-config-test
+
+#修改格式编码为UTF-8防止出现乱码    
